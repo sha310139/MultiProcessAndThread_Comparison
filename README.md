@@ -1,0 +1,2 @@
+# MultiProcessAndThread_Comparison
+使用MultiProcess及MultiThread分別執行BubbleSort及MergeSort，比較不同個數的Process和Thread在不同資料量(1、10、50、100萬)執行速度的差異。
