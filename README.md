@@ -98,16 +98,16 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.212-b10, mixed mode)<br>
 
 
 
-![]()
+![](https://github.com/sha310139/MultiProcessAndThread_Comparison/blob/main/1.JPG)
 
-從圖表中可以看到，任務一沒有做切割，也沒有使用thread及process，<br>
+從上圖中可以看到，任務一沒有做切割，也沒有使用thread及process，<br>
 明顯花了比其他任務還要更長的時間，特別是10W之後會有明顯差異<br>
 <br>
 <br>
 
-![]()
+![](https://github.com/sha310139/MultiProcessAndThread_Comparison/blob/main/2.JPG)
 
-從圖表中可以看到，任務三執行的時間比任務二及任務四還快，<br>
+從上圖中可以看到，任務三執行的時間比任務二及任務四還快，<br>
 原因是使用多個process，process光一個就能獨佔一次的CPU time slice，<br>
 若k=10，就有10個process在競爭CPU資源，使用到CPU的次數及時間相對較多<br>
 <br>
